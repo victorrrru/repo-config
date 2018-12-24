@@ -10,3 +10,7 @@ spring:
     username: root
     password: 123456
     maxActive:50
+redisson:
+  ip: 127.0.0.1
+  port: 6379
+  mode: single
