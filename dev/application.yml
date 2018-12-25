@@ -1,3 +1,6 @@
+common:
+  dev: true
+  public-key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCUruULBEuddultickzyGCawEOZrRDDXUU2sR2fDwunz+zdN7dp1ahc8N1bbr5fki3z5RJDpAHezmRZYAKxrBUg+yk379a3QZRFB888crAJD7QVMozyln6GTPijWTgOdzgswxK3wmfAyZso4K2zzqR84xLzr07RWcld4FSpF9Ij2QIDAQAB
 spring:
   #redis
   redis:
@@ -16,3 +19,6 @@ redisson:
   ip: 127.0.0.1
   port: 6379
   mode: single
+logging:
+  level:
+    com.rain.platform: INFO
