@@ -16,6 +16,7 @@ spring:
     password: 123456
     maxActive: 50
     driver-class-name: com.mysql.cj.jdbc.Driver
+    validationQuery: select 'x'
 redisson:
   ip: 127.0.0.1
   port: 6379
