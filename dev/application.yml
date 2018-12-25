@@ -1,9 +1,11 @@
 spring:
+  #redis
   redis:
     host: 127.0.0.1
     port: 6379
     pool:
       max-active: 50
+  #数据源
   datasource:
     name: shop
     url: jdbc:mysql://120.77.173.16:3306/my_shop?useUnicode=true&characterEncoding=UTF8
