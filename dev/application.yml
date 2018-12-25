@@ -14,7 +14,7 @@ spring:
     url: jdbc:mysql://120.77.173.16:3306/my_shop?useUnicode=true&characterEncoding=UTF8
     username: root
     password: 123456
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     filters: stat
     maxActive: 10
     initialSize: 2
