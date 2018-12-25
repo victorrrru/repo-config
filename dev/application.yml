@@ -14,9 +14,21 @@ spring:
     url: jdbc:mysql://120.77.173.16:3306/my_shop?useUnicode=true&characterEncoding=UTF8
     username: root
     password: 123456
-    maxActive: 50
     driver-class-name: com.mysql.cj.jdbc.Driver
-    validationQuery: select 1
+    filters: stat
+    maxActive: 10
+    initialSize: 2
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 5
+
 redisson:
   ip: 127.0.0.1
   port: 6379
