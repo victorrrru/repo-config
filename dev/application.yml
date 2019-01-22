@@ -33,6 +33,11 @@ redisson:
   ip: 127.0.0.1
   port: 6379
   mode: single
+auth:
+  user:
+    token-header: Authorization
+    pub-key-path: jwt/pub.key
+
 logging:
   level:
     com.rain.platform: INFO
